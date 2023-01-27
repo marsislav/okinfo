@@ -1,4 +1,7 @@
 <?php
   //Текущ период
-    $date = "2021-02-01";
-    $tekusht_period = date('Y-m-d', strtotime($date. ' -1 month'));
+  function tekusht_period() {
+    $date = date('Ym');
+    $tekusht_period = date('Ym', strtotime($date. ' -1 month'));
+    echo $tekusht_period;
+  }
